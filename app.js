@@ -16,7 +16,10 @@ var indexRoutes      = require("./routes/index")
 
 //connecting to our local db    
 //mongoose.connect("mongodb://localhost/project1");
-mongoose.connect("mongodb://sarnava:password1997@ds117749.mlab.com:17749/project_1");
+var url=process.env.DATABASEURL|| "mongodb://localhost/project1";
+mongoose.connect(url);
+
+//mongoose.connect("mongodb://sarnava:password1997@ds117749.mlab.com:17749/project_1");
 //mongodb://sarnava:password1997@ds117749.mlab.com:17749/project_1
 //just for testing purpose of our page
 // app.get("/",function(req,res){
