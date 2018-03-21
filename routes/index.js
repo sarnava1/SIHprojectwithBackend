@@ -28,6 +28,10 @@ router.get("/details",middleware.isLoggedIn,function(req, res) {
     res.render("details");
 });
 
+router.get("/camera",middleware.isLoggedIn,function(req, res) {
+    res.render("camera");
+});
+
 
 //handle sign up logic
 router.post("/register", function(req, res){
