@@ -9,57 +9,59 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="container">
-  
-  <div id="welcomeDiv"  style="display:none;" class="answer_list" >
-   <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/9f5bW7o7dSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
- <iframe width="560" height="315"
-src="https://www.youtube.com/embed/cWZxf4bD7CQ" frameborder="0"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-  <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;" onclick="showDiv1()">Tester Cell Camera</button>
-<script type="text/javascript">
-  var count=0;
-    function showDiv() {
-            
-            if (count%2==0){
-               document.getElementById('welcomeDiv').style.display = "block";  
-            }
-            else{
+     <div class="container-fluid" style="margin-top:20px">
+        <div class="well well-lg">
+           <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" > 
+           <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;" onclick="showDiv1()">Control Panel Camera</button>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+           <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv()">Tester Cell Camera</button>
+           </div>
+           </div>
+           <script type="text/javascript">
+               var count=0;
+               function showDiv() {
+               if (count%2==0){
+                     document.getElementById('welcomeDiv').style.display = "block";  
+                }
+               else{
                document.getElementById('welcomeDiv').style.display = "none";  
-            }
-            
-            count++;
-            console.log(count);
-    }
-</script>
-
-   <div id="welcomeDiv1"  style="display:none;" class="answer_list" >
-    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/9f5bW7o7dSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-    <iframe width="560" height="315"
-src="https://www.youtube.com/embed/Mf0tBswZp7o" frameborder="0"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-  
-  </div>
-   <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv()">Control Panel Camera</button>
-<script type="text/javascript">
-  var count1=0;
-    function showDiv1() {
-            
-            if (count1%2==0){
+                }
+               count++;
+               console.log(count);
+               }
+           </script>
+           <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+           <div id="welcomeDiv1"  style="display:none;" class="answer_list" >
+           <iframe width="560" height="315"
+           src="https://www.youtube.com/embed/Mf0tBswZp7o" frameborder="0"
+           allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+           <div id="welcomeDiv"  style="display:none;" class="answer_list" >
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/cWZxf4bD7CQ" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>
+           </div>
+           </div>
+           <script type="text/javascript">
+               var count1=0;
+               function showDiv1() {
+               if (count1%2==0){
                document.getElementById('welcomeDiv1').style.display = "block";  
-            }
-            else{
+               }
+               else{
                document.getElementById('welcomeDiv1').style.display = "none";  
-            }
-            
+               }
             count1++;
             console.log(count);
-    }
-</script>
-
-  
+            }
+        </script>
+        </div>
+       </div>
 </body>
 </html>
