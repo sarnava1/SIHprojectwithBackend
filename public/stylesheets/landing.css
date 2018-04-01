@@ -40,22 +40,22 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStlfUf4Xt6RqCrvDTqyMT_RiTrRwIOqGRSfcp4h0T7mq2GhlLq) 
+  background-image: url(https://images.pexels.com/photos/236089/pexels-photo-236089.jpeg?auto=compress&cs=tinysrgb&h=350) 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkfwlMJ8skJC2WN_1FEFqR7ti6xJ6ZeaTXFHLu44PJ2GSweAUt);
+  background-image: url(https://images.pexels.com/photos/216578/pexels-photo-216578.jpeg?auto=compress&cs=tinysrgb&h=350);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMw8HbxgztTyXnZxxI72itRfLeyotSw_z3Q7p6kvbazGt2TYAqg);
+  background-image: url(https://images.pexels.com/photos/171428/pexels-photo-171428.jpeg?auto=compress&cs=tinysrgb&h=350);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9H9aPda3fybOYkDd84N-h4EbtNmNs0tWNhoOf7tr7hWWNFTy88A);
+  background-image: url(https://images.pexels.com/photos/68173/flash-tesla-coil-experiment-faradayscher-cage-68173.jpeg?auto=compress&cs=tinysrgb&h=350);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6KTVIMuAF9LqCXJylEntYZSphjnhyzPkdP-GVk9pJnjIBHE7);
+  background-image: url(https://images.pexels.com/photos/343460/pexels-photo-343460.jpeg?auto=compress&cs=tinysrgb&h=350);
   animation-delay: 40s; 
 }
 
