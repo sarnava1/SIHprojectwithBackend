@@ -1,40 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Project_1</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .button_style {
-    background-color: #ffffff; /* Green */
-    border: 2px solid black;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    cursor: pointer;
-}
- 
-  </style>
-</head>
-<body>
+<% include ./partials/header %>
      <div class="container-fluid" style="margin-top:20px">
         <div class="well well-lg">
            <div class="row">
-           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" > 
-           <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;" onclick="showbuttondiv()">Control Panel</button>
-           </div>
-           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" > 
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" > 
            <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv1()">Tester Cell Camera</button>
            </div>
-           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
            <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv()">Control Panel Camera</button>
            </div>
            </div>
@@ -77,52 +48,52 @@
             console.log(count);
             }
         </script>
-        <div id="button_div" style=" margin-top:10px;display:none">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <!--<div id="button_div" style=" margin-top:10px;display:none">-->
+        <!--<div class="row">-->
+        <!--    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>-->
             
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">MAINS ON</button>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">HT START</button>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">VOLT. INC MODE</button></button>
-            </div>
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">MAINS ON</button>-->
+        <!--    </div>-->
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">HT START</button>-->
+        <!--    </div>-->
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">VOLT. INC MODE</button></button>-->
+        <!--    </div>-->
             
-            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <!--    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-3"></div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+        <!--    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>-->
             
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">INC VOLT</button>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">HT STOP</button>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">MEMORY</button>
-            </div>
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">INC VOLT</button>-->
+        <!--    </div>-->
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">HT STOP</button>-->
+        <!--    </div>-->
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">MEMORY</button>-->
+        <!--    </div>-->
             
             
-            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <!--    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-3"></div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+        <!--    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>-->
             
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">DEC VOLT</button>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-            </div>
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--    </div>-->
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--        <button class="button_style" onmousedown="this.style.background='red'" onmouseup="this.style.background='white'">DEC VOLT</button>-->
+        <!--    </div>-->
+        <!--    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+        <!--    </div>-->
             
-            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-3"></div>
-        </div>
-        </div>
+        <!--    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-3"></div>-->
+        <!--</div>-->
+        <!--</div>-->
             <script type="text/javascript">
                var count2=0;
                function showbuttondiv() {
@@ -138,5 +109,4 @@
            </script>
         </div>
        </div>
-</body>
-</html>
+<% include ./partials/footer %>

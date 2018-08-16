@@ -1,12 +1,116 @@
-<% include ./partials/header %> 
+<% include ./partials/header %>
+    <div class="row">
+        <h1 style="text-align: center">Sign Up</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/register" method="post">
+                
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="firstName" placeholder="first name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="lastName" placeholder="last name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="email like konarsarnava@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="organisation" placeholder="organisation" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="organisationaddr" placeholder="organisation address" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="orgheadname" placeholder="organisation head name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="orgcheadontno" placeholder="organisation head contact no" required>
+                </div>
+                <div class="form-group">
+                <label class="radio-inline"><input type="radio"  id="facradio" value="facdesig" onclick="show1();">Faculty</label>
+                <label class="radio-inline"><input type="radio"  id="studradio" value="studdesig" onclick="show2();">Student</label>
+                </div>
+                <div class="form-group">
+                <div id="divofstud">
+                    <div class="form-group">
+                    <input class="form-control" type="text" name="rollno" placeholder="roll no">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="pursueyear" placeholder="pursuing year">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="personalcontno" placeholder="personal contact no">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="text" name="hodname" placeholder="name of HOD">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="hodcontno" placeholder="contact no of HOD">
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                <div id="divoffac">
+                    <!--<div class="form-group">-->
+                    <!--Handled/Handling HVL : -->
+                    <!--<label class="radio-inline"><input type="radio" name="handledhvl" >Yes</label>-->
+                    <!--<label class="radio-inline"><input type="radio" name="handledhvl" >No</label>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="handledhvl" placeholder="experience in years of handling/handled HVL ">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="teachingexp" placeholder="teaching experience in years">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="personalcontno" placeholder="personal contact no">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="text" name="hodname" placeholder="name of HOD">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="number" name="hodcontno" placeholder="contact no of HOD">
+                    </div>
+                </div>
+                </div>
 
-<div class="container">
-<h1>Sign Up!</h1>
-<form action="/register" method="post">
-    <input type="text" name="username" placeholder="username" required>
-    <!--<input type="email" name="useremail" placeholder="useremail">-->
-    <input type="password" name="password" placeholder="password" required>
-    <button>Sign Up</button>
-</form>
-</div>
-<% include ./partials/footer %> 
+                
+                
+                
+                
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Lcqk1sUAAAAAFIqIW1vqC3evQBMZaRUxxlKJ9tf"></div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+                </div>
+            </form>
+            <a href="/index">Go Back</a>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script type="text/javascript">
+        
+        document.getElementById('divofstud').style.display ='none';
+        document.getElementById('divoffac').style.display ='none';
+        function show2(){
+        document.getElementById('divofstud').style.display ='block';
+        document.getElementById('divoffac').style.display ='none';
+        }
+        function show1(){
+        document.getElementById('divofstud').style.display ='none';    
+        document.getElementById('divoffac').style.display = 'block';
+        }
+        
+        
+    </script>
+    
+<% include ./partials/footer %>

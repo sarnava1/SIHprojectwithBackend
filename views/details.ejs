@@ -1,36 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-	    <title>Project1</title>
-	    <meta charset="utf-8">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
-</head>
-
-<body>
+<% include ./partials/header %>
      <div class="container" style="background:#E9F7EF;margin-top:20px;border: 6px solid #17202A">
          <h1 style="color:red;" class="text-center"><strong><u>Instructions for the Experiment</u></strong></h1>
          <br>
          <h2 style="" class="text-center"><strong>Testing of Oil</strong></h3>
          <div>
-          <ul style="list-style-type:none">
-                 <strong style="font-size:18px"><li>Experiment No : </strong><p style="font-size:16px; display:inline-block">1</p></li>
-                 <strong style="font-size:18px"><li>Title : </strong><p style="font-size:16px; display:inline-block">BDV of oil</p></li>
-                 <strong style="font-size:18px"><li>Objective : </strong><p style="font-size:16px; display:inline-block">Study BDV Strength test of insulating oils using
-                 100 KV motorized oil test set</p></li>
-                 <strong style="font-size:18px"><li>Apparatus used : </strong><p style="font-size:16px; display:inline-block"></p></li>
-           </ul>           
+          <!--<ul style="list-style-type:none">-->
+                 <strong style="font-size:18px">Experiment No : </strong><p style="font-size:16px; display:inline-block">1</p>
+                 <br>
+                 <strong style="font-size:18px">Title : </strong><p style="font-size:16px; display:inline-block">BDV of oil</p>
+                 <br>
+                 <strong style="font-size:18px">Objective : </strong><p style="font-size:16px; display:inline-block">Study BDV Strength test of insulating oils using
+                 100 KV motorized oil test set</p>
+                 <br>
+                 <strong style="font-size:18px">Apparatus used : </strong><p style="font-size:16px; display:inline-block"></p>
+           <!--</ul>           -->
                    <table class="table table-hover table-bordered table-responsive table-condensed">
                       <thead>
                          <tr>
@@ -183,10 +166,13 @@
                  <h3>
                      <strong>Conclusion: </strong>
                  </h3>
+                 <div>
+                     <p style="font-size:16px">Write down your conclusion here</p>
+                 </div>
                  <br>
                  <br>
                  <br>
-                <h1><strong>To begin the experiment</strong><a href="/camera" class="btn btn-lg btn-warning" style="display:inline-block;margin-left:30px">Click HERE</a></h1>
+                <h2><strong>To begin the experiment</strong><a href="/camera" class="btn btn-sm btn-warning" style="display:inline-block;margin-left:30px">Click HERE</a></h2>
 
     <!--========================================================================================================================================================================                -->
     <!--                                                     TRIAL VERSION BEGINS HERE-->
@@ -201,6 +187,4 @@
          </div>
          
      
-</body>
-
-</html>
+<% include ./partials/footer %>
