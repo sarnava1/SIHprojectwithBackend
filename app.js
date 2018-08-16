@@ -73,6 +73,7 @@ app.use(function(req, res, next){
 //we will only do our work using the indexRoutes and thus we are calling it here
 app.use("/", indexRoutes);
 
+//console.log(process.env.secretKey);
 
 //the app is listening to the server 
 app.listen(process.env.PORT,process.env.IP,function(){
