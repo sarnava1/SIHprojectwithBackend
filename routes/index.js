@@ -47,7 +47,7 @@ router.post("/register", function(req, res){
         //passport.authenticate is a middleware..the signup logic first registers the user and then logs them in
         passport.authenticate("local")(req, res, function(){
             // on authentication display a flash message to welcome the new user
-           req.flash("success", "Welcome to Project1 " + user.username);
+           req.flash("success", "Welcome to Online High Voltage Laboratory " + user.username);
            //only after displaying a flash message can we redirect..this is a rule!!!!!!!!!
            res.redirect("/index"); 
         });

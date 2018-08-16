@@ -42,7 +42,7 @@ app.use(flash());
 //few lines of hebrew for the uninitiated but it is nothing but just configuring our passport.js
 //nothing to memorize guys...chill out!!!!!!!!!!!!
 app.use(require("express-session")({
-    secret: "PROJECT1",
+    secret: "online hvl",
     resave: false,
     saveUninitialized: false
 }));
@@ -76,6 +76,6 @@ app.use("/", indexRoutes);
 
 //the app is listening to the server 
 app.listen(process.env.PORT,process.env.IP,function(){
-    console.log("project1 testing version is up!!!!!!!!!");
+    console.log("Online HVL server is up!!!!!!!!!");
 });
 
