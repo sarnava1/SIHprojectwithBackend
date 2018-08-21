@@ -81,6 +81,15 @@ router.get("/login", function(req, res){
    res.render("login"); 
 });
 
+
+
+//show contact info 
+router.get("/contact", function(req, res){
+   res.render("contact"); 
+});
+
+
+
 //handling login logic
 //here we use the same passport.authenticate middleware that we used during registration process and the only difference is here
 //we are registered from before..all the complex work is handled by passport js using the local strategy...so chill out guys!!!!!!!!
