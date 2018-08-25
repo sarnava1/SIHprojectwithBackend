@@ -98,7 +98,7 @@ router.post("/login", passport.authenticate("local",
         successRedirect: "/index",
         failureRedirect: "/login",
         failureFlash: true,
-        successFlash: 'Welcome to YelpCamp!'
+        successFlash: 'Welcome to Online High Voltage Lab!'
     }), function(req, res){
 });
 
