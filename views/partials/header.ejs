@@ -56,18 +56,26 @@
 </nav>
     <!--since flash messages can be a part of each and every route that is why we define flash messages in the header.ejs-->
     <!--this part checks if there is a error message or success message and then displays accordingly using flash and bootstrap classes-->
-    <div class="container">
+    <div class="container-fluid"  style="background-color:#2d2d30">
         <!--if there is error and length of error is greater than 0 then we display the error-->
         <% if(error && error.length > 0){ %>
-            <div class="alert alert-danger" role="alert">
+          <div >
+            <div class="alert alert-danger" role="alert" style="margin:8px;">
                 <%= error %>
             </div>
+            </div>
+            
         <% } %>
         <!--similarly for success-->
         <% if(success && success.length > 0){ %>
-            <div class="alert alert-success" role="alert">
+        <div >
+            <div class="alert alert-success" role="alert" style="margin:8px;">
                 <%= success %>
+            </div>
             </div>
         <% } %>
     </div>
+    
+    <!--<div class="container">-->
+
  
