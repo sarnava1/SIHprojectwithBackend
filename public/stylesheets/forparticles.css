@@ -39,6 +39,7 @@
    body {
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
+      
   }
   h3, h4 {
       margin: 20px 0 10px 0;
@@ -59,7 +60,33 @@
       color: #000;
   }
   
+  html{
+      height: 100%;
+      margin:0;
+      padding: 0;
+      
+  }
   
+  body{
+      margin:0;
+      padding:0;
+      height:100%;
+  }
+  
+  .wrapper{
+      min-height: 100%;
+      position:relative;
+  }
+  
+
+  #footer{
+      height: 40px;
+      width:100%;
+      left:0px;
+      bottom:0px;
+      position: absolute;
+      text-align: center;
+  }
 
 /*.footer {*/
 /*    position: fixed;*/
