@@ -11,7 +11,6 @@ var UserSchema = new mongoose.Schema({
     organisationaddr:{type: String, unique: false},
     orgheadname:{type: String, unique: false},
     orgheadcontno:{type: Number, unique: false},
-    
     rollno:{type: String, unique: false,default:""},
     pursueyear:{type: Number, unique: false,default:0},
     personalcontno:{type: Number, unique: false,default:0},
