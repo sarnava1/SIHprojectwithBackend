@@ -110,3 +110,8 @@ user-select: none;
     -o-user-select: none;
     user-select: none;
 }
+
+.mejs__mediaelement iframe {
+    pointer-events: none;
+}
+
