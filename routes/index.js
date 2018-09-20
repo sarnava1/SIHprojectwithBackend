@@ -14,6 +14,16 @@ router.get("/", function(req, res){
 });
 
 // show register form so that an unauthorised user can register himself
+router.get("/about", function(req, res){
+   res.render("about"); 
+});
+
+// show register form so that an unauthorised user can register himself
+router.get("/instructions", function(req, res){
+   res.render("instructions"); 
+});
+
+// show register form so that an unauthorised user can register himself
 router.get("/register", function(req, res){
    res.render("register"); 
 });
