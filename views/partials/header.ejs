@@ -17,6 +17,7 @@
         
         <!--for the recaptcha-->
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!--this script is for disabling the right click-->
         <script>
             document.addEventListener('contextmenu', event => event.preventDefault());
         </script>
@@ -44,11 +45,12 @@
            
           <ul class="nav navbar-nav navbar-right">
               <% if(!currentUser){ %>
+                  <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">About Project</a></li>
+                  <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Instructions</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'contact' ? 'active' : '' %>"><a href="/contact">Contact</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">Login</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Sign Up</a></li>
-                  <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">About Project</a></li>
-                  <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Instructions</a></li>
+                  
               <% } else { %>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">About Project</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Instructions</a></li>
