@@ -9,6 +9,7 @@ var express           = require("express"),
     methodOverride    = require("method-override"),
     //this is requiring our user model which we defined separately in the models subfolder
     User              = require("./models/user");
+   
 
 //we are requiring our routes which are defined in an external folder
 //as the project gets complex we will soon be requiring many more routes here ;D
