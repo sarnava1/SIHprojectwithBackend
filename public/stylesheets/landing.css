@@ -40,7 +40,7 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://drive.google.com/uc?id=1qbSA5_kvnVCVAXvgWSHsUpPYh_9y3ZsQ) 
+  background-image: url(https://drive.google.com/uc?id=1hp7HCSwRT0BAflEIvAQ_kPr81naijjo3) 
 }
 .slideshow li:nth-child(2) { 
   background-image: url(https://drive.google.com/uc?id=19Jsz92KEbXw-1FklH_QWaaHMRB_5p591);
@@ -55,7 +55,7 @@ body {
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://drive.google.com/uc?id=1hp7HCSwRT0BAflEIvAQ_kPr81naijjo3);
+  background-image: url(https://drive.google.com/uc?id=1qbSA5_kvnVCVAXvgWSHsUpPYh_9y3ZsQ);
   animation-delay: 40s; 
 }
 
