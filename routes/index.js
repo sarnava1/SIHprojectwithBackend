@@ -13,12 +13,12 @@ router.get("/", function(req, res){
     res.render("landing");
 });
 
-// show register form so that an unauthorised user can register himself
+// show about page
 router.get("/about", function(req, res){
    res.render("about"); 
 });
 
-// show register form so that an unauthorised user can register himself
+// show instructions page
 router.get("/instructions", function(req, res){
    res.render("instructions"); 
 });
