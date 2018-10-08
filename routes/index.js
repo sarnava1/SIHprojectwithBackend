@@ -33,10 +33,21 @@ router.get("/index",function(req, res) {
     res.render("index");
 });
 
-//renders the details page which for now shows "PAGE UNDER CONSTRUCTION"
-//isLoggedIn is a middleware which checks if we are logged in or not
-router.get("/details",middleware.isLoggedIn,function(req, res) {
-    res.render("details");
+//renders the details page which for exp1
+router.get("/details1",function(req, res) {
+    res.render("details1");
+});
+
+
+//renders the details page which for exp2
+router.get("/details2",function(req, res) {
+    res.render("details2");
+});
+
+
+//renders the details page which for exp3
+router.get("/details3",function(req, res) {
+    res.render("details3");
 });
 
 router.get("/camera",middleware.isLoggedIn,function(req, res) {

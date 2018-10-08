@@ -84,7 +84,6 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <!--for the recaptcha-->
         <script src='https://www.google.com/recaptcha/api.js'></script>
-        <link rel="stylesheet" href="/stylesheets/styles.css">
         <link rel="stylesheet" href="/stylesheets/main.css">
         <link rel="stylesheet" href="/stylesheets/forparticles.css">
     </head>
@@ -110,6 +109,15 @@
               <% if(!currentUser){ %>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/about">About Project</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/instructions">Instructions</a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Experiments
+                     <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                     <li><a href="/details1" >Experiment 1</a></li>
+                     <li><a href="/details2" >Experiment 2</a></li>
+                     <li><a href="/details3" >Experiment 3</a></li>
+                     </ul>
+                  </li>
                   <li class="<%= typeof page !== 'undefined' && page === 'contact' ? 'active' : '' %>"><a href="/contact">Contact</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">Login</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Sign Up</a></li>
@@ -117,8 +125,25 @@
               <% } else { %>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/about">About Project</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/instructions">Instructions</a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Experiments
+                     <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                     <li><a href="/details1" >Experiment 1</a></li>
+                     <li><a href="/details2" >Experiment 2</a></li>
+                     <li><a href="/details3" >Experiment 3</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schedule Session
+                     <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                     <li><a href="http://calendly.com/highvoltagelab2008" target="_blank">Experiment 1</a></li>
+                     <li><a href="#" >Experiment 2</a></li>
+                     <li><a href="#" >Experiment 3</a></li>
+                     </ul>
+                  </li>
                   <li class="<%= typeof page !== 'undefined' && page === 'contact' ? 'active' : '' %>"><a href="/contact">Contact</a></li>
-                  <li><a href="http://calendly.com/highvoltagelab2008" target="_blank">Schedule a session for EXP. 1</a></li>
                   <li><a href="#">Signed In As <%= currentUser.username %></a></li>
                   <li><a href="/logout">Logout</a></li>
               <% } %>
