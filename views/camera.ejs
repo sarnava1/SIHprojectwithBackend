@@ -1,75 +1,80 @@
-<% include ./partials/header %>
-     
-     <div class="container-fluid" style="margin-top:10px; margin-left:10px;margin-right:10px" >
-        <div class="well well-lg">
-           <div class="row">
-           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" > 
-           <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv1()">Tester Cell Camera</button>
-           </div>
-           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
-           <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv()">Control Panel Camera</button>
-           </div>
-           </div>
-           <script type="text/javascript">
-               var count=0;
-               function showDiv() {
-               if (count%2==0){
-                     document.getElementById('welcomeDiv').style.display = "block";  
-                }
-               else{
-               document.getElementById('welcomeDiv').style.display = "none";  
-                }
-               count++;
-               console.log(count);
-               }
-           </script>
-           <div >
-           <div class="row">
-           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
-           <div id="welcomeDiv1"  style="display:none; " class="answer_list" >
-               <iframe width=95% height="315" src="https://www.youtube.com/embed/gkDNmRXcF_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-           </div>
-           </div>
-           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-           <div id="welcomeDiv"  style="display:none;" class="answer_list" >
-                <iframe width=95% height="315" src="https://www.youtube.com/embed/l0vSTK20NMw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<% include ./partials/headercamera %>
 
+<div class="bg-1" style="height:85vh">
+    <div class="container">
+        <!--this div was created to add a border around the smaller divs-->
+        <div  style="margin-top:30px">
+           <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" > 
+                  <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv1()">Tester Cell Camera</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                  <button type="button" class="btn btn-warning btn-lg " style="margin-top:10px;margin-bottom: 10px;margin-left: 10px" onclick="showDiv()">Control Panel Camera</button>
+              </div>
            </div>
-           </div>
-           </div>
-           </div>
-           <script type="text/javascript">
-               var count1=0;
-               function showDiv1() {
-               if (count1%2==0){
-               document.getElementById('welcomeDiv1').style.display = "block";  
-               }
-               else{
-               document.getElementById('welcomeDiv1').style.display = "none";  
-               }
-            count1++;
-            console.log(count);
-            }
-        </script>
-            <script type="text/javascript">
-               var count2=0;
-               function showbuttondiv() {
-               if (count2%2==0){
-                     document.getElementById('button_div').style.display = "block";  
-                }
-               else{
-               document.getElementById('button_div').style.display = "none";  
-                }
-               count2++;
-               console.log(count2);
-               }
-           </script>
         </div>
-       </div>
-       
+        
+        <div>
+           <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                   <div id="welcomeDiv1"  style="display:none; " class="answer_list" >
+                       <iframe width=95% height="315" src="https://www.youtube.com/embed/gkDNmRXcF_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                   </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                   <div id="welcomeDiv"  style="display:none;" class="answer_list" >
+                       <iframe width=95% height="315" src="https://www.youtube.com/embed/l0vSTK20NMw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
 </body>
-<footer  style="bottom:0;" class="text-center footer">
+<footer  style="bottom:0;height:15vh" class="text-center footer">
    <p>Developed and Maintained By High Voltage Lab Project Team, NIT Durgapur (2018-19)</p> 
 </footer>
-  
 </html>
+
+
+<!--js scripts-->
+    <script type="text/javascript">
+        var count=0;
+        function showDiv() {
+           if (count%2==0){
+               document.getElementById('welcomeDiv').style.display = "block";  
+           }
+           else{
+               document.getElementById('welcomeDiv').style.display = "none";  
+           }
+        count++;
+        console.log(count);
+        }
+    </script>
+    
+    <script type="text/javascript">
+        var count1=0;
+        function showDiv1() {
+           if (count1%2==0){
+               document.getElementById('welcomeDiv1').style.display = "block";  
+           }
+           else{
+               document.getElementById('welcomeDiv1').style.display = "none";  
+           }
+        count1++;
+        console.log(count);
+        }
+    </script>
+    <script type="text/javascript">
+        var count2=0;
+        function showbuttondiv() {
+           if (count2%2==0){
+              document.getElementById('button_div').style.display = "block";  
+           }
+           else{
+              document.getElementById('button_div').style.display = "none";  
+           }
+        count2++;
+        console.log(count2);
+       }
+    </script>
