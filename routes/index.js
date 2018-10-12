@@ -50,7 +50,7 @@ router.get("/details3",function(req, res) {
     res.render("details3");
 });
 
-router.get("/camera",function(req, res) {
+router.get("/camera",middleware.isLoggedIn, function(req, res) {
     res.render("camera");
 });
 
