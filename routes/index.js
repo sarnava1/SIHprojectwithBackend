@@ -49,9 +49,19 @@ router.get("/details2",function(req, res) {
 router.get("/details3",function(req, res) {
     res.render("details3");
 });
+//render camera1 page
+router.get("/camera1",middleware.isLoggedIn, function(req, res) {
+    res.render("camera1");
+});
 
-router.get("/camera",middleware.isLoggedIn, function(req, res) {
-    res.render("camera");
+//render camera2 page
+router.get("/camera2",middleware.isLoggedIn, function(req, res) {
+    res.render("camera2");
+});
+
+//render camera3 page
+router.get("/camera3",middleware.isLoggedIn, function(req, res) {
+    res.render("camera3");
 });
 
 
