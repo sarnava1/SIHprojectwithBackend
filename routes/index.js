@@ -13,6 +13,16 @@ router.get("/", function(req, res){
     res.render("landing");
 });
 
+
+router.get("/logtoexp2",function(req, res) {
+    res.render("logtoexp2");
+});
+
+
+router.get("/logtoexp3",function(req, res) {
+    res.render("logtoexp3");
+});
+
 // show about page
 router.get("/about", function(req, res){
    res.render("about"); 
@@ -49,20 +59,55 @@ router.get("/details2",function(req, res) {
 router.get("/details3",function(req, res) {
     res.render("details3");
 });
-//render camera1 page
-router.get("/camera1",middleware.isLoggedIn, function(req, res) {
-    res.render("camera1");
+
+//get the page for entering code of the first exp
+router.get("/logtoexp1",middleware.isLoggedIn,function(req, res) {
+    res.render("logtoexp1");
 });
 
-//render camera2 page
-router.get("/camera2",middleware.isLoggedIn, function(req, res) {
-    res.render("camera2");
+//the logic for seeing whether the code for exp1 is okay or not
+router.post("/logtoexp1", function(req, res){
+    if(req.body.codeforexp1!=process.env.EXPCODE1){
+      req.flash("error", "Please enter the correct code that has been mailed to you");
+      return res.redirect("/logtoexp1");    
+    }else{
+        return res.render("camera1.ejs");
+    }
+    
 });
 
-//render camera3 page
-router.get("/camera3",middleware.isLoggedIn, function(req, res) {
-    res.render("camera3");
+//get the page for entering code of the second exp
+router.get("/logtoexp2",middleware.isLoggedIn,function(req, res) {
+    res.render("logtoexp2");
 });
+
+//the logic for seeing whether the code for exp1 is okay or not
+router.post("/logtoexp2", function(req, res){
+    if(req.body.codeforexp2!=process.env.EXPCODE2){
+      req.flash("error", "Please enter the correct code that has been mailed to you");
+      return res.redirect("/logtoexp2");    
+    }else{
+        return res.render("camera2.ejs");
+    }
+    
+});
+
+//get the page for entering code of the third exp
+router.get("/logtoexp3",middleware.isLoggedIn,function(req, res) {
+    res.render("logtoexp3");
+});
+
+//the logic for seeing whether the code for exp1 is okay or not
+router.post("/logtoexp3", function(req, res){
+    if(req.body.codeforexp3!=process.env.EXPCODE3){
+      req.flash("error", "Please enter the correct code that has been mailed to you");
+      return res.redirect("/logtoexp3");    
+    }else{
+        return res.render("camera3.ejs");
+    }
+    
+});
+
 
 
 //handle sign up logic

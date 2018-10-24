@@ -1,4 +1,4 @@
-var Campground = require("../models/user");
+var User = require("../models/user");
 
 // all the middleare goes here
 //the middleware is where we see where a user is logged in or not and other things
@@ -15,5 +15,12 @@ middlewareObj.isLoggedIn = function(req, res, next){
 }
 
 
+middlewareObj.isCodeAccpt1 = function(req, res, next){
+    if(req.body.codeforexp1 == process.env.EXPCODE1){
+        return next();
+    }
+    req.flash("error", "You need to enter the correct code for exp 1 to perform it");
+    res.redirect("/logtoexp1");
+}
 
 module.exports = middlewareObj;

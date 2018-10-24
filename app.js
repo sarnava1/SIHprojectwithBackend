@@ -20,7 +20,8 @@ var indexRoutes      = require("./routes/index")
 var url=process.env.DATABASEURL|| "mongodb://localhost/project1";
 mongoose.connect(url);
 
-//mongoose.connect("mongodb://sarnava:password1997@ds117749.mlab.com:17749/project_1");
+
+//mongoose.connect("mowngodb://sarnava:password1997@ds117749.mlab.com:17749/project_1");
 //mongodb://sarnava:password1997@ds117749.mlab.com:17749/project_1
 //just for testing purpose of our page
 // app.get("/",function(req,res){
@@ -79,5 +80,6 @@ app.use("/", indexRoutes);
 //the app is listening to the server 
 app.listen(process.env.PORT,process.env.IP,function(){
     console.log("Online HVL server is up!!!!!!!!!");
+    
 });
 
