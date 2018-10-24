@@ -67,8 +67,6 @@ router.get("/camera3",middleware.isLoggedIn, function(req, res) {
 
 //handle sign up logic
 router.post("/register", function(req, res){
-    
-    
     const captcha = req.body["g-recaptcha-response"];
     if (!captcha) {
       console.log(req.body);
@@ -87,7 +85,24 @@ router.post("/register", function(req, res){
         return res.redirect("/register");
       }
 
-    var newUser = new User({username: req.body.username});
+    var newUser = new User({
+        username: req.body.username,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        organisation: req.body.organisation,
+        organisation_address: req.body.organisationaddr,
+        org_head_name: req.body.orgheadname,
+        org_head_cont_no: req.body.orgheadcontno,
+        roll_no:req.body.rollno,
+        pursue_year:req.body.pursueyear,
+        personal_cont_no:req.body.personalcontno,
+        hod_name:req.body.hodname,
+        hod_cont_no:req.body.hodcontno,
+        handled_hvl:req.body.handledhvl,
+        teaching_exp:req.body.teachingexp,
+      });
+
     //the user in the callback fn is the new user that has been created just now
     User.register(newUser, req.body.password, function(err, user){
         if(err){

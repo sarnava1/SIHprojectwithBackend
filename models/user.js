@@ -12,12 +12,12 @@ var UserSchema = new mongoose.Schema({
     orgheadname:{type: String, unique: false},
     orgheadcontno:{type: Number, unique: false},
     rollno:{type: String, unique: false,default:""},
-    pursueyear:{type: Number, unique: false,default:0},
-    personalcontno:{type: Number, unique: false,default:0},
+    pursueyear:{type: Number, unique: false,default:100},
+    personalcontno:{type: Number, unique: false,default:100},
     hodname:{type: String, unique: false,default:""},
-    hodcontno:{type: Number, unique: false,default:0},
-    handledhvl:{type: Number, unique: false,default:0},
-    teachingexp:{type: Number, unique: false,default:0}
+    hodcontno:{type: Number, unique: false,default:100},
+    handledhvl:{type: Number, unique: false,default:100},
+    teachingexp:{type: Number, unique: false,default:100}
     
 });
 //designation:{type: String, unique: false, required: true},
