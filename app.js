@@ -20,8 +20,6 @@ var indexRoutes      = require("./routes/index")
 var url=process.env.DATABASEURL|| "mongodb://localhost/project1";
 mongoose.connect(url);
 
-//console.log("the local db is ");
-//console.log(process.env.DATABASEURL);
 
 //just for testing purpose of our page
 // app.get("/",function(req,res){
