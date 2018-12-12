@@ -13,7 +13,7 @@ var UserSchema = new mongoose.Schema({
     orgheadcontno:          String,
     rollno:                 String,
     pursueyear:             String,
-    personalcontno:         Number,
+    personalcontno:         String,
     hodname:                String, 
     hodcontno:              String,
     handledhvl:             String,
