@@ -152,9 +152,9 @@ router.post("/register", function(req, res){
     User.register(newUser, req.body.password, function(err, user){
         if(err){
             //on err display a flash message and directly end the function over here by using the return statement to render the register page again
-            console.log(err);
-            req.flash("error", err.message);
-            return res.render("register");
+            //console.log(err);
+            return res.render("register", {error: err.message});
+            
         }
         //passport.authenticate is a middleware..the signup logic first registers the user and then logs them in
         passport.authenticate("local")(req, res, function(){
