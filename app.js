@@ -15,8 +15,7 @@ var express           = require("express"),
 //as the project gets complex we will soon be requiring many more routes here ;D
 var indexRoutes      = require("./routes/index")
 
-//connecting to our local db    
-
+//connecting to our local db or the mongolab db depending whether we run it in production or in development
 var url=process.env.DATABASEURL|| "mongodb://localhost/project1";
 mongoose.connect(url);
 

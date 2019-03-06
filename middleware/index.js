@@ -1,6 +1,6 @@
 var User = require("../models/user");
 
-// all the middleare goes here
+// all the middleware goes here
 //the middleware is where we see where a user is logged in or not and other things
 //it comes in the middle and thus it is termed as a middleware
 var middlewareObj = {};
